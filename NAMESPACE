@@ -1,0 +1,2 @@
+import(Rfast)
+exportPattern("^[[:alpha:]]+")
