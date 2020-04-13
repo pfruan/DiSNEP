@@ -45,6 +45,6 @@ se=diffus_matrix(s0,adjacency)
 se_post=post_process(se)
 
 #prioritize the disease association signals.
-p1=diffus_vec(signals,se_post,"pvalue")
+res=diffus_vec(signals,se_post,"pvalue")
 
 }

@@ -2,10 +2,10 @@
 \alias{signals}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
-A example of an association signals.
+An example of an association signals.
 }
 \description{
-A example of an association signals for 1000 genes randomly generated from TCGA KIRP gene expression data.
+An example of an association signals for 1000 genes randomly generated from TCGA KIRP gene expression data.
 }
 
 
@@ -23,6 +23,6 @@ se=diffus_matrix(s0,adjacency)
 se_post=post_process(se)
 
 #prioritize the disease association signals.
-p1=diffus_vec(signals,se_post,"pvalue")
+res=diffus_vec(signals,se_post,"pvalue")
 
 }

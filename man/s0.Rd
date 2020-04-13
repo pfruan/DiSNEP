@@ -2,10 +2,10 @@
 \alias{s0}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
-A example of a general gene network.
+An example of a general gene network.
 }
 \description{
-A example of a general gene network with 1000 genes randomly selected from STRING network.
+An example of a general gene network with 1000 genes randomly selected from STRING network.
 }
 
 

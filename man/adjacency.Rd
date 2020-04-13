@@ -2,10 +2,10 @@
 \alias{adjacency}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
-A example of an adjacency matrix.
+An example of an adjacency matrix.
 }
 \description{
-A example of an adjacency matrix with 1000 genes randomly generated from TCGA KIRP gene expression data.
+An example of an adjacency matrix with 1000 genes randomly generated from TCGA KIRP gene expression data.
 }
 
 
