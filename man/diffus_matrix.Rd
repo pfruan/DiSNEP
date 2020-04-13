@@ -32,12 +32,19 @@ A parameter for converenge.
 The enhanced disease-specific network.
 }
 \references{
-DiSNEP: a Disease-Specific gene Network Enhancement to improve Prioritizing candidate disease genes (2019), Peifeng Ruan, Shuang Wang.
+DiSNEP: a Disease-Specific gene Network Enhancement to improve Prioritizing candidate disease genes (2020), Peifeng Ruan, Shuang Wang.
 }
 
 %% ~Make other sections like Warning with \section{Warning }{....} ~
 \examples{
 
-##SE=diffus_matrix(s0,adjacency)
+#enhance the general network s0 into a disease specific network by diffusion on similarity network generated from disease omics data.
+se=diffus_matrix(s0,adjacency)
+
+#denoise the enhanced network and make it symmetric.
+se_post=post_process(se)
+
+#prioritize the disease association signals.
+p1=diffus_vec(signals,se_post,"pvalue")
 
 }

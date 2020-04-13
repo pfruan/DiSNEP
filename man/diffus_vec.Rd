@@ -18,6 +18,9 @@ A matrix of original gene signals, with one colomn's name is gene and the other 
   \item{snet}{
 A gene network.
 }
+  \item{type}{
+The type of input association signals, p value or z score.
+}
   \item{beta}{
 A regularization parameter representing weights for signal sources where beta = 0 means no priotitization.
 }
@@ -32,12 +35,20 @@ A parameter for converenge.
 The prioritized candidate genes with signal scores from large to small.
 }
 \references{
-DiSNEP: a Disease-Specific gene Network Enhancement to improve Prioritizing candidate disease genes (2019), Peifeng Ruan, Shuang Wang.
+DiSNEP: a Disease-Specific gene Network Enhancement to improve Prioritizing candidate disease genes (2020), Peifeng Ruan, Shuang Wang.
 }
 
 %% ~Make other sections like Warning with \section{Warning }{....} ~
 \examples{
 
-#GE=diffus_vec(t_score,snet)
+#enhance the general network s0 into a disease specific network by diffusion on similarity network generated from disease omics data.
+se=diffus_matrix(s0,adjacency)
+
+#denoise the enhanced network and make it symmetric.
+se_post=post_process(se)
+
+#prioritize the disease association signals.
+p1=diffus_vec(signals,se_post,"pvalue")
+
 
 }
