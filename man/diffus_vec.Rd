@@ -8,7 +8,7 @@ Prioritizing signal genes by diffusion process
 Prioritizing signal genes by diffusion process with a gene network.
 }
 \usage{
-diffus_vec(t_score, snet, beta=0.75, iter=10, difference=1e-6)
+diffus_vec(t_score, snet, beta=0.75, iter=10, difference=1e-6, top=100)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
@@ -29,6 +29,9 @@ Number of iterations.
 }
   \item{difference}{
 A parameter for converenge.
+}
+    \item{top}{
+A parameter for how many genes include in the candidate gene list.
 }
 }
 \value{
