@@ -8,11 +8,11 @@ directly download the abSNF_1.0.2.tar.gz file and install it locally.
 
 Here is an example for how to use the package:
 
-library(DiSNEP)
+library(DiSNEP).   
 
-#load example dataset
-#s0 is a general network, which contains 1000 genes.
-#adjacency is a similarity matrix,which contains 1000 genes.
+#load example dataset. 
+#s0 is a general network, which contains 1000 genes.  
+#adjacency is a similarity matrix,which contains 1000 genes.  
 #signals is a gene association signals matrix with one column of genes' name and one column of genes' association p values.
 
 data("s0")
