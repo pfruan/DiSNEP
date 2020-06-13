@@ -46,7 +46,8 @@ se_post=post_process(se,percent=0.9)
 #type indicates the type of input assocaitaion signals, "pvalue" or "zscore". 
 #beta is a regularization parameter representing weights for signal sources where beta = 0 means no priotitization. The default value is 0.75.   
 #iter is the number of iterations. The default value is 10.    
-#difference	is a parameter for converenge defining when the iteration stops.The default value is 1e-6.    
+#difference	is a parameter for converenge defining when the iteration stops.The default value is 1e-6.   
+#top is a parameter for how many genes will be selected.
 #The returned value is a list of prioritized genes ranked from high to low.  
   
 res=diffus_vec(signals,se_post,type="pvalue", beta=0.75, iter=10, difference=1e-6)  
