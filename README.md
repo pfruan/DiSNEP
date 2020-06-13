@@ -8,7 +8,7 @@ directly download the abSNF_1.0.2.tar.gz file and install it locally.
 
 Here is an example for how to use the package:
 
-library(DiSNEP).   
+library(DiSNEP)   
 
 #load example dataset. 
 #s0 is a general network, which contains 1000 genes.  
