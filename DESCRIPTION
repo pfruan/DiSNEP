@@ -1,0 +1,12 @@
+Package: DiSNEP
+Type: Package
+Title: DiSNEP: a Disease-Specific Enhancement for gene Network
+        Enhancement to improve Prioritizing candidate disease genes
+Version: 1.0.2
+Author: Peifeng Ruan
+Maintainer: Peifeng Ruan <pruan@gwu.edu>
+Depends: R (>= 3.5.0), SMUT (>= 1.1), Rcpp (>= 0.12.3)
+Description: a Disease-Specific Network Enhancement Prioritization (DiSNEP) framework that enhances a comprehensive gene network for a disease using a gene-gene similarity network derived from a type of omics data of the disease that reflects correlations/interactions between genes for the disease, through a diffusion process. The enhanced disease-specific gene network better reflects true gene interactions for the disease and can be used to prioritize disease-associated genes. 
+License: GPL (>=2)
+Encoding: UTF-8
+LazyData: true
