@@ -1,22 +1,22 @@
 A Disease-Specific Network Enhancement Prioritization (DiSNEP) framework that enhances a comprehensive gene network for a disease using a gene-gene similarity network derived from a type of omics data of the disease that reflects correlations/interactions between genes for the disease, through a diffusion process.  
   
 - The package can be installed through:  
-* *library("devtools")    
-* *install_github("pfruan/DiSNEP")    
+*library("devtools")*    
+*install_github("pfruan/DiSNEP")*    
   
 or  
   
-- directly download the abSNF_1.0.2.tar.gz file and install it locally.  
+*directly download the abSNF_1.0.2.tar.gz file and install it locally.*  
   
 **Here is an example for how to use the package:** 
   
-library(DiSNEP)   
+*library(DiSNEP)*   
   
 **Load example dataset.**
   
 *data("s0")*   
-* *data("adjacency")*   
-* *data("signals")*   
+*data("adjacency")*   
+*data("signals")*   
 
 - s0 is a general network, which contains 1000 genes.  
 - adjacency is a similarity matrix,which contains 1000 genes.  
@@ -24,7 +24,7 @@ library(DiSNEP)
     
 **Enhance a general network s0 into a disease specific network by diffusion on a similarity network generated from a type of disease omics data.**  
     
-se=diffus_matrix(s0,adjacency,alpha=0.75,iter=10, difference=1e-6)  
+*se=diffus_matrix(s0,adjacency,alpha=0.75,iter=10, difference=1e-6)*  
 
 - s0 is the original general gene network.  
 - adjacency	is a gene-gene similarity network derived from a type of omics data of a disease.  
@@ -36,7 +36,7 @@ se=diffus_matrix(s0,adjacency,alpha=0.75,iter=10, difference=1e-6)
   
 **Denoise the enhanced network and make it binary and symmetric.**
   
-se_post=post_process(se,percent=0.9) 
+*se_post=post_process(se,percent=0.9)*  
   
 - se is the enhanced disease specific network. 
 - percent is what percentage of edges to be considered as noise. The default value is 0.9.  
@@ -45,7 +45,7 @@ se_post=post_process(se,percent=0.9)
   
 **Prioritize the disease association signals by diffusion process on a gene network**
     
-res=diffus_vec(signals,se_post,type="pvalue", beta=0.75, iter=10, difference=1e-6)  
+*res=diffus_vec(signals,se_post,type="pvalue", beta=0.75, iter=10, difference=1e-6)*  
   
 - t_score is a matrix of original gene signals, with the first colomn is the gene names and the second column is the association signals.  
 - snet is a gene network.  
