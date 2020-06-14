@@ -6,7 +6,7 @@ A Disease-Specific Network Enhancement Prioritization (DiSNEP) framework that en
 or  
 *directly download the DiSNEP_1.0.2.tar.gz file and install it locally.*  
   
-**Here is an example for how to use the package:** 
+# **Here is an example for how to use the package:** 
   
 *library(DiSNEP)*   
   
