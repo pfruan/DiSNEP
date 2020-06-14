@@ -14,7 +14,7 @@ library(DiSNEP)
   
 **Load example dataset.**
   
-* *data("s0")*   
+*data("s0")*   
 * *data("adjacency")*   
 * *data("signals")*   
 
