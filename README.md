@@ -56,5 +56,5 @@ or
 - top is a parameter for how many genes will be selected. The default value is 100.
 - the returned value is prioritized genes ranked from high to low.  
   
-  
+## **Reference  
 1.	Szklarczyk D, Gable AL, Lyon D, et al. STRING v11: protein–protein association networks with increased coverage, supporting functional discovery in genome-wide experimental datasets. Nucleic Acids Research 2018;47:D607-D613.
