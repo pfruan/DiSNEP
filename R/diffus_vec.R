@@ -11,7 +11,7 @@ diffus_vec=function(signals,snet,type,beta=0.75,iter=10,difference=1e-6,top=100)
   }
 
   #column nomorlize the network
-  snet=t(t(snet)/(colsums(snet)+.Machine$double.eps))
+  snet=t(t(snet)/(colSums(snet)+.Machine$double.eps))
 
   #signals: gene  score
   #intialize
