@@ -51,5 +51,5 @@ or
 - beta is a regularization parameter representing weights for signal sources where beta = 0 means no priotitization. The default value is 0.75.   
 - iter is the number of iterations. The default value is 10.    
 - difference	is a parameter for converenge defining when the iteration stops.The default value is 1e-6.   
-- top is a parameter for how many genes will be selected.
+- top is a parameter for how many genes will be selected. The default value is 100.
 - the returned value is prioritized genes ranked from high to low.  
