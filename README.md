@@ -10,7 +10,7 @@ or
   
 *library(DiSNEP)*   
   
-## **Load example dataset.**
+## **Load example datasets.**
   
 *data("s0")*   
 *data("adjacency")*   
