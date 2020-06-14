@@ -10,17 +10,17 @@ or
   
 *library(DiSNEP)*   
   
-**Load example dataset.**
+## **Load example dataset.**
   
 *data("s0")*   
 *data("adjacency")*   
 *data("signals")*   
 
-- s0 is a general network, which contains 1000 genes.  
-- adjacency is a similarity matrix,which contains 1000 genes.  
-- signals is a gene association signals matrix with one column of genes' name and one column of genes' association p values.
+- s0 is a n * n general network. In this example, it contains 1000 genes.  
+- adjacency is a n * n similarity matrix. In this example, it contains 1000 genes.  
+- signals is a n * 2 gene association signals matrix with one column of genes' name and one column of genes' association p values. In this example, it contains 1000 genes.
     
-**Enhance a general network s0 into a disease specific network by diffusion on a similarity network generated from a type of disease omics data.**  
+## **Enhance a general network s0 into a disease specific network by diffusion on a similarity network generated from a type of disease omics data.**  
     
 *se=diffus_matrix(s0,adjacency,alpha=0.75,iter=10, difference=1e-6)*  
 
@@ -32,7 +32,7 @@ or
 - the returned value a enhanced gene network.  
   
   
-**Denoise the enhanced network and make it binary and symmetric.**
+## **Denoise the enhanced network and make it binary and symmetric.**
   
 *se_post=post_process(se,percent=0.9)*  
   
@@ -41,7 +41,7 @@ or
 - the returned value is a denoised, binary and symmetric gene network.  
   
   
-**Prioritize the disease association signals by diffusion process on a gene network**
+## **Prioritize the disease association signals by diffusion process on a gene network**
     
 *res=diffus_vec(signals,se_post,type="pvalue", beta=0.75, iter=10, difference=1e-6, top=100)*  
   
