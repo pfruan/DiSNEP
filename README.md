@@ -3,9 +3,7 @@ A Disease-Specific Network Enhancement Prioritization (DiSNEP) framework that en
 - The package can be installed through:  
 *library("devtools")*    
 *install_github("pfruan/DiSNEP")*    
-  
 or  
-  
 *directly download the abSNF_1.0.2.tar.gz file and install it locally.*  
   
 **Here is an example for how to use the package:** 
@@ -31,7 +29,7 @@ or
 - alpha is a regularization parameter representing weights for signal sources where α = 0 means no disease-specific enhancement. The default value is 0.75.   
 - iter is the number of iterations. The default value is 10.  
 - difference	is a parameter for converenge defining when the iteration stops.The default value is 1e-6.  
-- the returned se a enhanced gene network.  
+- the returned value a enhanced gene network.  
   
   
 **Denoise the enhanced network and make it binary and symmetric.**
@@ -40,7 +38,7 @@ or
   
 - se is the enhanced disease specific network. 
 - percent is what percentage of edges to be considered as noise. The default value is 0.9.  
-- The returned value is a denoised, binary and symmetric gene network.  
+- the returned value is a denoised, binary and symmetric gene network.  
   
   
 **Prioritize the disease association signals by diffusion process on a gene network**
@@ -54,4 +52,4 @@ or
 - iter is the number of iterations. The default value is 10.    
 - difference	is a parameter for converenge defining when the iteration stops.The default value is 1e-6.   
 - top is a parameter for how many genes will be selected.
-- The returned value is a list of prioritized genes ranked from high to low.  
+- the returned value is prioritized genes ranked from high to low.  
