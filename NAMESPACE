@@ -1,2 +1,2 @@
-import(Rfast)
+import(SMUT)
 exportPattern("^[[:alpha:]]+")
