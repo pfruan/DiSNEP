@@ -18,7 +18,7 @@ or
 *data("adjacency")*   
 *data("signals")*   
 
-- s0 is a n * n general network. In this example, we randomly selected 1000 genes from a general gene network STRING [1] and kept the edges of these 100 genes selected from the STRING network.  
+- s0 is a n * n general network. In this example, we randomly selected 1000 genes from a general gene network STRING [1] and kept the edges of these 1000 genes selected from the STRING network.  
 - adjacency is a n * n similarity matrix. In this example, we generated the similarity network using the TCGA kidney renal papillary cell carcinoma (KIRP) gene expression data with the same 1000 genes in s0.  
 - signals is a n * 2 matrix with gene association signals. Column one has  gene names. Column two has gene association pvalues. In this example, we calculated the association p values using the TCGA KIRP ene expression data with the same 1000 genes in s0.
     
