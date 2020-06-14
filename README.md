@@ -8,7 +8,7 @@ or
   
 - directly download the abSNF_1.0.2.tar.gz file and install it locally.  
   
-**Here is an example for how to use the package:  
+**Here is an example for how to use the package: ** 
   
 library(DiSNEP)   
   
