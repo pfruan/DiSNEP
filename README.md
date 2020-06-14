@@ -20,7 +20,7 @@ data("s0")
 data("adjacency")  
 data("signals")  
   
-# Enhance a general network s0 into a disease specific network by diffusion on a similarity network generated from a tpe of disease omics data.    
+# Enhance a general network s0 into a disease specific network by diffusion on a similarity network generated from a type of disease omics data.    
   
 #s0 is the original general gene network.  
 #adjacency	is a gene-gene similarity network derived from a type of omics data of a disease.  
