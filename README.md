@@ -43,7 +43,7 @@ or
   
 **Prioritize the disease association signals by diffusion process on a gene network**
     
-*res=diffus_vec(signals,se_post,type="pvalue", beta=0.75, iter=10, difference=1e-6)*  
+*res=diffus_vec(signals,se_post,type="pvalue", beta=0.75, iter=10, difference=1e-6, top=100)*  
   
 - t_score is a matrix of original gene signals, with the first colomn is the gene names and the second column is the association signals.  
 - snet is a gene network.  
