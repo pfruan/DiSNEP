@@ -6,9 +6,9 @@ install_github("pfruan/DiSNEP")
   
 or  
   
-directly download the abSNF_1.0.2.tar.gz file and install it locally.  
+- directly download the abSNF_1.0.2.tar.gz file and install it locally.  
   
-Here is an example for how to use the package:  
+**Here is an example for how to use the package:  
   
 library(DiSNEP)   
   
@@ -22,7 +22,7 @@ data("s0")
 data("adjacency")  
 data("signals")  
   
-** Enhance a general network s0 into a disease specific network by diffusion on a similarity network generated from a type of disease omics data.**  
+**Enhance a general network s0 into a disease specific network by diffusion on a similarity network generated from a type of disease omics data.**  
   
 - s0 is the original general gene network.  
 - adjacency	is a gene-gene similarity network derived from a type of omics data of a disease.  
@@ -33,7 +33,7 @@ data("signals")
   
 se=diffus_matrix(s0,adjacency,alpha=0.75,iter=10, difference=1e-6)  
   
-** Denoise the enhanced network and make it binary and symmetric.**
+**Denoise the enhanced network and make it binary and symmetric.**
   
 - se is the enhanced disease specific network. 
 - percent is what percentage of edges to be considered as noise. The default value is 0.9.  
