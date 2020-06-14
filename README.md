@@ -14,9 +14,9 @@ library(DiSNEP)
   
 **Load example dataset.**
   
-* *data("s0")* *  
-* *data("adjacency")* *  
-* *data("signals")* *  
+* *data("s0")*   
+* *data("adjacency")*   
+* *data("signals")*   
 
 - s0 is a general network, which contains 1000 genes.  
 - adjacency is a similarity matrix,which contains 1000 genes.  
