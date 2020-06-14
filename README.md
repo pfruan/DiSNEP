@@ -1,7 +1,7 @@
 A Disease-Specific Network Enhancement Prioritization (DiSNEP) framework that enhances a comprehensive gene network for a disease using a gene-gene similarity network derived from a type of omics data of the disease that reflects correlations/interactions between genes for the disease, through a diffusion process.  
   
 - The package can be installed through:  
-library("devtools")  
+* *library("devtools")  * *
 install_github("pfruan/DiSNEP")    
   
 or  
@@ -14,9 +14,9 @@ library(DiSNEP)
   
 **Load example dataset.**
   
-data("s0")  
-data("adjacency")  
-data("signals")  
+* *data("s0")* *  
+* *data("adjacency")* *  
+* *data("signals")* *  
 
 - s0 is a general network, which contains 1000 genes.  
 - adjacency is a similarity matrix,which contains 1000 genes.  
