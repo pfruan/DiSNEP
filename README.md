@@ -8,6 +8,8 @@ The aim of this package is to present an improved analytical tool for prioritizi
 or  
 *directly download the DiSNEP_1.0.2.tar.gz file and install it locally.*  
   
+- The package DiSNEP depends on :Depends: R (>= 3.5.0), SMUT (>= 1.1), Rcpp (>= 0.12.3)  
+  
 # **Here is an example for how to use the package:** 
   
 *library(DiSNEP)*   
