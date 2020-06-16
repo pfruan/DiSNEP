@@ -28,14 +28,14 @@ This package presents an improved analytical tool for prioritizing genes associa
 - ‘alpha’ is a regularization parameter representing weights for signal sources where α = 0 means no disease-specific enhancement. The default value is 0.75.
 - ‘iter’ is number of iterations. The default value is 10. 
 - ‘difference’ is a parameter defining convergence when iterations stop. The default value is 1e-6.
-- the returned value is an enhanced gene network but asymmetric and without denoised.  
+- the returned value is an enhanced gene network but asymmetric and without being denoised.  
   
   
 ## **Denoise the enhanced network and make it binary and symmetric.**
   
 *se_post=post_process(se,percent=0.9)*  
   
-- ‘se’ is the enhanced disease specific network but asymmetric and without denoised. It is the returned value of diffus_matrix function. 
+- ‘se’ is the enhanced disease specific network but asymmetric and without being denoised. It is the returned value of diffus_matrix function. 
 - ‘percent’ is what percentage of edges to be considered as noise. The default value is 0.9.  
 - the returned value is a denoised, binary and symmetric gene network.  
   
