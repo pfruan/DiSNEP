@@ -23,8 +23,8 @@ This package presents an improved analytical tool for prioritizing genes associa
     
 *se=diffus_matrix(s0,adjacency,alpha=0.75,iter=10, difference=1e-6)*  
 
-- 's0’ is the original general gene network. 
-- ‘adjacency’	is a gene-gene similarity matrix derived from a type of omics data of a disease.  
+- 's0’ is the original n * n general gene network.. 
+- ‘adjacency’ is a n * n gene-gene similarity matrix derived from a disease omics data.  
 - ‘alpha’ is a regularization parameter representing weights for signal sources where α = 0 means no disease-specific enhancement. The default value is 0.75.
 - ‘iter’ is number of iterations. The default value is 10. 
 - ‘difference’ is a parameter defining convergence when iterations stop. The default value is 1e-6.
