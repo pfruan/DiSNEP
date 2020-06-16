@@ -54,6 +54,6 @@ This package presents an improved analytical tool for prioritizing genes associa
 - the returned value is selected prioritized genes.  
   
 ## Reference  
-1. Ruan P, Wang S DiSNEP: a Disease-Specific gene Network Enhancement to improve Prioritizing candidate disease genes. Briefings in Bioinformatics, submitted
+1. Ruan P, Wang S. DiSNEP: a Disease-Specific gene Network Enhancement to improve Prioritizing candidate disease genes. Briefings in Bioinformatics, submitted.
 2. Szklarczyk D, Gable AL, Lyon D, et al. STRING v11: protein–protein association networks with increased coverage, supporting functional discovery in genome-wide experimental datasets. Nucleic Acids Research 2018;47:D607-D613.
  
