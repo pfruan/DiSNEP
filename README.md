@@ -11,9 +11,6 @@ This package presents an improved analytical tool for prioritizing genes associa
 # **A brief tutorial:** 
   
 *library(DiSNEP)*   
-  
-## **Load example datasets.**
-  
 *data("s0")*   
 *data("adjacency")*   
 *data("signals")*   
