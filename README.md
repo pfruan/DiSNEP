@@ -47,10 +47,10 @@ or
   
 ## **Prioritize the disease association signals by diffusion process on a gene network**
     
-*res=diffus_vec(signals,se_post,type="pvalue", beta=0.75, iter=10, difference=1e-6, top=100)*  
+*res=diffus_vec(signals=signals,net=se_post,type="pvalue", beta=0.75, iter=10, difference=1e-6, top=100)*  
   
-- t_score is a matrix of original gene signals, with the first colomn is the gene names and the second column is the association signals.  
-- snet is a gene network.  
+- signals is a matrix of original gene signals, with the first colomn is the gene names and the second column is the association signals.  
+- net is a gene network.  
 - type indicates the type of input assocaitaion signals, "pvalue" or "zscore". 
 - beta is a regularization parameter representing weights for signal sources where beta = 0 means no priotitization. The default value is 0.75.   
 - iter is the number of iterations. The default value is 10.    
