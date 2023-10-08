@@ -15,7 +15,7 @@ This package presents an improved analytical tool for prioritizing genes associa
 *data("adjacency")*   
 *data("signals")*   
 
-- ‘s0’ is a n * n matrix representing a general network, where we randomly selected 1,000 genes from a general gene network STRING [2] and kept the edges of these 1,000 genes selected from the STRING network.  
+- ‘s0’ is a n * n matrix representing a general network, where we randomly selected 1,000 genes from a general gene network STRING [2].  
 - ‘adjacency’ is a n * n gene-gene similarity matrix derived from a disease omics data.  
 - ‘signals’ is a n * 2 matrix with gene association signals, where column one has gene names and column two has gene association p-values obtained from paired t-tests comparing TCGA KIRP gene expression levels between tumor samples and adjacent normal samples on the same 1,000 genes in ‘s0’.
     
